@@ -1,7 +1,7 @@
 {
-  "name": "template-config",
+  "name": "templated-config",
   "version": "0.0.1",
-  "description": "An envoriment based configuration with template strings for process.env variables.",
+  "description": "An configuration tool that combines structured JSON files with environment variables by leveraging template string.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

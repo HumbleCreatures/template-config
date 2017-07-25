@@ -1,4 +1,4 @@
-# template-config
+# templated-config
 An configuration tool that combines structured JSON files with environment variables by leveraging template string. It loads configuration from JSON files from a `<app_root>/config` directory. The `NODE_ENV` environment variable determines which configuration file is loaded.
 
 The basic configuration file is a plain JSON file.
