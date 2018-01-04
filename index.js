@@ -4,13 +4,13 @@ const path = require("path");
 const environmentName = process.env.NODE_ENV || "development";
 
 const basePath = process.env.CONFIG_BASE_PATH || process.cwd();
-let configPath = path.join(basePath, "config", environmentName + ".js");
+let configPath = path.join(basePath, "config", environmentName + ".json");
 
 let result = {};
 if (fs.existsSync(configPath)) {
   const configContent = fs.readFileSync(configPath).toString();
-  const templatedString = eval('`'+configContent+'`');
-  eval("result="+templatedString);
+  const templatedString = eval("`" + configContent + "`");
+  eval("result=" + templatedString);
 } else {
   throw `Configuration file ${configPath} could not be found.`;
 }

@@ -1,10 +1,10 @@
 {
   "name": "templated-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An configuration tool that combines structured JSON files with environment variables by leveraging template string.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha ./specs/*.spec.js"
   },
   "keywords": [
     "configuration",
@@ -14,6 +14,8 @@
   "author": "Emil Cardell",
   "license": "MIT",
   "devDependencies": {
-    "expect.js": "^0.3.1"
-  }
+    "expect.js": "^0.3.1",
+    "mocha": "^4.1.0"
+  },
+  "dependencies": {}
 }
